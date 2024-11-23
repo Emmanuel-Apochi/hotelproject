@@ -27,15 +27,15 @@ $services = $stmt->fetch(PDO::FETCH_ASSOC);
     </div>
     <div class=" container" style="max-width: 1000px height 1000px;">
       <div class="card-body" style="max-width: 1000px;">
-        <h5 class="card-title"><?php echo $services['service_name'];?></h5>
+        <h3 class="card-title"><?php echo $services['service_name'];?></h3>
         <h5 class="card-title"><?php echo $services['description'];?></h5>
         <p class="card-text container"><?php echo $services['cost'];?></p>
 
 
-        <h3 style="text-align: center; color: black;">Fill in with your information to recieve our services</h3>
+        <h3 style="text-align: center; color: black; font-family: Times new Roman;font-style: italic;">Fill in with your information to recieve our services</h3>
         <form action="https://formspree.io/f/mrbglqwo" method="POST" id="bookingForm">
         <input type="text" class="form-control" name="name" placeholder="Name" required><br>
-        <input type="text" class="form-control" name="email" placeholder="Email" required><br>
+        <input type="email" class="form-control" name="email" placeholder="Email" required><br>
         <input type="number" class="form-control" name="phone" placeholder="Phone number" required><br>
         <input type="number" class="form-control" name="number of persons" placeholder="Number of persons" required><br>
         <button type="submit" class="btn btn-primary">BOOK NOW</button>

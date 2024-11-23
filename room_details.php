@@ -28,18 +28,20 @@ $rooms = $stmt->fetch(PDO::FETCH_ASSOC);
     </div>
     <div class=" container" style="max-width: 1000px height 1000px;">
       <div class="card-body" style="max-width: 1000px;">
-        <h5 class="card-title"><?php echo $rooms['room_name'];?></h5>
-        <h5 class="card-title"><?php echo $rooms['room_type'];?></h5>
+        <h5 class="card-title" style=" font-family: Times new Roman;font-style: italic;"><?php echo $rooms['room_name'];?></h5>
+        <h5 class="card-title" style=" font-family: Times new Roman;font-style: italic;"><?php echo $rooms['room_type'];?></h5>
         <p class="card-text container"><?php echo $rooms['description'];?></p>
-        <p class="card-text"><?php echo $rooms['availability_status'];?></p>
+        <p>$<?php echo $rooms['price_per_night'];?></p>
 
-        <h3 style="text-align: center;">Fill in with your information to book a room</h3>
+        <p class="card-text" style=" font-family: Times new Roman;font-style: italic; color: green;"><?php echo $rooms['availability_status'];?></p>
+
+        <h3 style="text-align: center; color: black; font-family: Times new Roman;font-style: italic;">Fill in with your information to book a room</h3>
     <form action="https://formspree.io/f/mrbglqwo" method="POST" id="bookingForm">
         <input type="text" class="form-control" name="name" placeholder="Name" required><br>
-        <input type="text" class="form-control" name="email" placeholder="Email" required><br>
+        <input type="email" class="form-control" name="email" placeholder="Email" required><br>
         <input type="number" class="form-control" name="phone" placeholder="Phone number" required><br>
-        <input type="text" class="form-control" name="Check-in" placeholder="Check-in" required><br>
-        <input type="text" class="form-control" name="Check-out" placeholder="Check-out" required><br>
+        <input type="date" class="form-control" name="Check-in" placeholder="Check-in" required><br>
+        <input type="date" class="form-control" name="Check-out" placeholder="Check-out" required><br>
         <input type="number" class="form-control" name="number of persons" placeholder="Number of persons" required><br>
         <button type="submit" class="btn btn-primary">BOOK NOW</button>
 

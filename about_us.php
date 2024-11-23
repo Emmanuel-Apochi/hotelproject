@@ -76,7 +76,7 @@ require_once "navbar.php";
             <div>
                 <h2>About Us</h2>
                 <p>
-                    Welcome to <strong>Grandeur Hotel</>, where luxury meets exceptional service in an atmosphere of elegance and sophistication. Situated in the heart of [City Name], our hotel provides the perfect blend of modern comfort and timeless charm, ensuring that every guest enjoys a truly memorable stay.
+                    Welcome to <strong>Grandeur Hotel</>, where luxury meets exceptional service in an atmosphere of elegance and sophistication. Situated in the heart of california, our hotel provides the perfect blend of modern comfort and timeless charm, ensuring that every guest enjoys a truly memorable stay.
                 </p>
                 <p>
                     At Grandeur Hotel, we believe that hospitality is an art. Our team is dedicated to creating an unforgettable experience by attending to every detail, from beautifully designed rooms to personalized service that caters to your every need.

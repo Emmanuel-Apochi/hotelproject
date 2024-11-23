@@ -23,7 +23,7 @@
   <div class="col-12">
     <div class="row pt-2">
 
-      <div class="col-md-6 d-block-sm p-5 bg-danger text-light">
+      <div class="col-md-6 d-block-sm p-5 bg-success text-light">
         <h2>Luxury Suite</h2>
         <p class="lead"> luxury suite is more than just a place to sleep—it is an immersive environment where every detail is designed to pamper the guest and elevate their stay to new heights..</p>
 

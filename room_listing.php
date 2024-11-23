@@ -24,12 +24,12 @@ $hotels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <div class="text-with-background mb-3 glow">
-            <h1>Make <br>Yourself<br> At Home In Our Hotel.</h1>
+            <h1>Make <br>Yourself<br> At Home In Our Hotel</h1>
         </div>
         <h3 style="text-align: center;">OUR ROOMS</h3>
    <div class=" container row">
    <?php foreach ($hotels as $hotel):?>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         
       <div class="card" style="width: 18rem;">
   <img src="images/<?php echo $hotel['image_url'];?>" class="card-img-top" alt="...">

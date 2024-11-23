@@ -24,18 +24,18 @@ $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <div class="text-background mb-3">
-            <h1>Our Services.</h1>
+            <h1>Our Services</h1>
         </div>
     
    <div class=" container row mt-5">
    <?php foreach ($services as $service):?>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-5">
         
       <div class="card" style="width: 18rem;">
   <img src="images/<?php echo $service['image_url'];?>" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $service['service_name'];?></h5>
-    <h4 class="card-title"><?php echo $service['description'];?></h4>
+    <h4 class="card-title"><?php echo $service['service_name'];?></h4>
+    <h6 class="card-title"><?php echo $service['description'];?></h6>
     <p class="card-text">$<?php echo $service['cost'];?></p>
     <a href="service_details.php?id=<?php echo $service["id"]; ?>" class="btn btn-primary">View</a>
   </div>
